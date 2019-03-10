@@ -178,7 +178,7 @@ GMOD_MODULE_OPEN()
 	LUA->PushCFunction(discordInit); LUA->SetField(-2, "init");
 	LUA->PushCFunction(discordUpdatePresence); LUA->SetField(-2, "updatePresence");
 	LUA->SetField(-2, "discord");
-
+	/*
 	LUA->GetField(-1, "hook");
 	LUA->GetField(-1, "Add");
 	LUA->PushString("Think");
@@ -186,7 +186,7 @@ GMOD_MODULE_OPEN()
 	LUA->PushCFunction(polling);
 	LUA->Call(3, 0);
 	LUA->Pop();
-
+	*/
 	LUA->Pop();
 
 
