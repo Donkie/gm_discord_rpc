@@ -17,6 +17,8 @@ Initializes a connect to the Discord client. Important: Make sure you ever only 
 #### discord.updatePresence(*table* PresenceStruct)
 Updates the user presence. The Discord API has an internal rate limiting of 15 seconds on this function so there's no use in calling this more often than that.
 
+Leaving a field empty will unset its value.
+
 #### PresenceStruct
 | field          | type   | description                                                                                                                                 |
 |----------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------|
